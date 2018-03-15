@@ -1,12 +1,59 @@
 <section id=panel__ID>
 	<div class='nav__ID'>
-		<span>Research projects</span>
-		<ul>
-			<li module=applications>Cloud applications</li>
-			<li module=knowledge-base>Knowledge base</li>
-			<li module=job-request>Job request tracking</li>
+		<span>Cloud applications</span>
+		<ul id=g1__ID>
+			<li><a target=_blank href='https://cpaphdeeg-online-questionnaire.rt.org.au/'>CPAPHDEEG online questionnaire</a></li>
+			<li><a target=_blank href='https://cpaphdeeg.rt.org.au/'>CPAPHDEEG project management</a></li>
+			<li><a target=_blank href='https://hdeeg-mci-online-questionnaire.rt.org.au/'>HDEEG-MCI online questionnaire</a></li>
+			<li><a target=_blank href='https://hdeeg-mci.rt.org.au/'>HDEEG-MCI project management</a></li>
+
+			<li><a target=_blank href='https://nightstudy-online-questionnaire.rt.org.au/'>Nightstudy online questionnaire</a></li>
+			<li><a target=_blank href='https://nightstudy.rt.org.au/'>Nightstudy project management</a></li>
+
+			<li><a target=_blank href='https://sfix-registration.rt.org.au/'>SFIX registration</a></li>
+			<li><a target=_blank href='https://sfix-registration-management.rt.org.au/'>SFIX registration management</a></li>
+			<li><a target=_blank href='https://sfix-online-questionnaire.rt.org.au/'>SFIX online questionnaire</a></li>
+			<li><a target=_blank href='https://sfix.rt.org.au/'>SFIX project management</a></li>
+			<li><a target=_blank href='https://volunteer-database.rt.org.au/'>Volunteer database (front end)</a></li>
+			<li><a target=_blank href='https://volunteer-database-management.rt.org.au/'>Volunteer database (back end)</a></li>
+
+			<li><a target=_blank href='https://windfarm-home-online-questionnaire.rt.org.au/'>Windfarm home study online questionnaire</a></li>
+			<li><a target=_blank href='https://windfarm-home.rt.org.au/'>Windfarm home study project management</a></li>
+
+			<li><a target=_blank href='https://windfarm-home-online-questionnaire.rt.org.au/'>Windfarm home study online questionnaire</a></li>
 		</ul>
-		<br>
+		<ul id=g2__ID>
+			<li><a target=_blank href='http://127.0.0.1:8000//woolcock-imr/cpaphdeeg-2-online-questionnaire/index.html?database=development'>CPAPHDEEG online questionnaire</a></li>
+			<li><a target=_blank href='http://127.0.0.1:8000//woolcock-imr/cpaphdeeg-2/index.html?database=development'>CPAPHDEEG project management</a></li>
+			<br>
+			<li><a target=_blank href='http://127.0.0.1:8000//woolcock-imr/hdeeg-mci-2-online-questionnaire/index.html?database=development'>HDEEG-MCI online questionnaire</a></li>
+			<li><a target=_blank href='http://127.0.0.1:8000//woolcock-imr/hdeeg-mci-2/index.html?database=development'>HDEEG-MCI project management</a></li>
+
+			<br>
+			<li><a target=_blank href='https://nightstudy-online-questionnaire.rt.org.au/'>Nightstudy online questionnaire</a></li>
+			<li><a target=_blank href='https://nightstudy.rt.org.au/'>Nightstudy project management</a></li>
+			<br>
+			<li><a target=_blank href='https://sfix-registration.rt.org.au/'>SFIX registration</a></li>
+			<li><a target=_blank href='https://sfix-registration-management.rt.org.au/'>SFIX registration management</a></li>
+			<li><a target=_blank href='https://sfix-online-questionnaire.rt.org.au/'>SFIX online questionnaire</a></li>
+			<li><a target=_blank href='https://sfix.rt.org.au/'>SFIX project management</a></li>
+			<br>
+			<li><a target=_blank href='https://volunteer-database.rt.org.au/'>Volunteer database (front end)</a></li>
+			<li><a target=_blank href='https://volunteer-database-management.rt.org.au/'>Volunteer database (back end)</a></li>
+
+			<br>
+			<li><a target=_blank href='http://127.0.0.1:8000//woolcock-imr/windfarm-website/index.html?database=development'>Windfarm Website (recruitment)</a></li>
+
+			<br>
+			<li><a target=_blank href='https://windfarm-home-online-questionnaire.rt.org.au/'>Windfarm home study online questionnaire</a></li>
+			<li><a target=_blank href='https://windfarm-home.rt.org.au/'>Windfarm home study project management</a></li>
+			<br>
+			<li><a target=_blank href='http://127.0.0.1:8000//woolcock-imr/windfarm-recruitment-management/index.html?database=development'>Windfarm lab study recruitment management</a></li>
+			<li><a target=_blank href='http://127.0.0.1:8000//woolcock-imr/windfarm-lab-study-screening-online-questionnaire/index.html?database=development'>Windfarm lab study screening online questionnaire</a></li>
+			<li><a target=_blank href='http://127.0.0.1:8000//woolcock-imr/windfarm-screening-questionnaire/index.html?database=development'>Windfarm lab study screening project management</a></li>
+			<li><a target=_blank href='http://127.0.0.1:8000//woolcock-imr/hdeeg-mci-2/index.html?database=development'>Windfarm lab study online questionnaire</a></li>
+			<li><a target=_blank href='http://127.0.0.1:8000//woolcock-imr/windfarm-inlab/index.html?database=development'>Windfarm lab study project management</a></li>
+		</ul>
 		<span>Information</span>
 		<ul>
 			<li module=applications>Cloud applications</li>
@@ -51,9 +98,22 @@
     		  }
     		  $vm.nav_load_module(prefix+m,'',{});
     		}
+			var panel=$(this).attr('panel');
+			if(panel!=undefined){
+				if($vm.module_list[panel]==undefined){
+					alert(panel +" is not in the module list.");
+					return;
+				}
+				$vm.nav_load_module(panel);
+			}
     	})
     	//--------------------------------------------------------
     	$('#D__ID').on('load',function(){
+			$('#g2__ID').hide();
+			if(window.location.hostname=='127.0.0.1' || window.location.hostname=='localhost'){
+				$('#g1__ID').hide();
+				$('#g2__ID').show();
+			}
     		var pids="";
     		if($vm.server==='production'){
     		  $('.nav__ID li').each(function(index){
