@@ -6,13 +6,14 @@
         //-------------------------------------
         VmInclude:__COMPONENT__/grid/grid.v3.js
         //-------------------------------------
-        _fields="_Form,Name,Web_Address,Description,Contact Person";
+        _fields="_Form,Name,Source_Code,Web_Address,Description,Contact Person";
         _fields+=",Submit Date|DateTime,Submitted by|Author,_Delete,_Hidden|Participant_uid";
         //-------------------------------------
         $('#D__ID').on('load',function(){  _set_req(); _request_data(); })
         //-------------------------------------
 		_cell_render=function(records,I,field,td,set_value,source){
 			switch(field){
+				case 'Source_Code':
 				case 'Web_Address':
 					if(records[I].UID==null || records[I].UID==undefined) return;
 					if(source=='form'){
