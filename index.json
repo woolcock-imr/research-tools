@@ -4,6 +4,6 @@
 	"default_production":"Yes",
     "panels":{
 		"website":			{"url":"",									"modules":["website/index.json"]},
-		"rt":				{"url":"rt/panel.html",						"modules":["rt/index.json"]}
+		"rt":				{"url":"research-tools/panel.html",			"modules":["research-tools/index.json"]}
 	}
 }

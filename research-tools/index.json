@@ -1,0 +1,12 @@
+{
+	"modules":
+	{
+		"printer":			{"table_id":"91000086","url":"research-tools/modules/printer.html", 		"name_for_search":"Printer"},
+		"unikey":			{"table_id":"91000088","url":"research-tools/modules/unikey.html", 			"name_for_search":"UniKeys"},
+		"ssl":				{"table_id":"91000085","url":"research-tools/modules/ssl.html", 			"name_for_search":"SSL"},
+		"domain-name":		{"table_id":"91000084","url":"research-tools/modules/domain-name.html", 	"name_for_search":"Domain names"},
+		"applications":		{"table_id":"91000080","url":"research-tools/modules/applications.html", 	"name_for_search":"Cloud Applications"},
+		"knowledge-base":	{"table_id":"20000441","url":"research-tools/modules/knowledge-base.html", 	"name_for_search":"Knowledge base"},
+		"job-request":		{"table_id":"91000081","url":"research-tools/modules/job-request.html", 	"name_for_search":"Job request"}
+	}
+}
