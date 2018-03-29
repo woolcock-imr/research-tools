@@ -1,16 +1,27 @@
 <section>
-	VmInclude:__COMPONENT__/grid/grid.v3.html
+    VmInclude:__COMPONENT__/grid/grid_import.v3.html
 </section>
 <script>
     function F__ID(){
         //-------------------------------------
         VmInclude:__COMPONENT__/grid/grid.v3.js
 		//-------------------------------------
-		_fields="_Form,First_name,Surname,Title,Gender,Appointee,Reporting_To,Position,Unikey_Section,Login,Group,Office_No,Telephone,Expiry,Additional_Information";
+		_fields="_Form,NAS_Name,IP_Address,Mac_Address,Model,Login,Folder,Users,Group,Location,Additional_Information";
         _fields+=",Submit Date|DateTime,Submitted by|Author,_Delete";
         //-------------------------------------
         $('#D__ID').on('load',function(){  _set_req(); _request_data(); })
         //-------------------------------------
+		_cell_render=function(records,I,field,td,set_value,source){
+			switch(field){
+				/*
+			    case 'Expired_Date':
+					VmInclude:__COMPONENT__/grid/field_date.js
+			    	break;
+					*/
+			}
+		}
+		//-------------------------------------
+		VmInclude:__COMPONENT__/grid/import.js
     }
 </script>
 <style>

@@ -1,6 +1,11 @@
 {
 	"modules":
 	{
+		"staff-form":		{"table_id":"91000091","url":"research-tools/modules/staff-form.html", 		"name_for_search":""},
+		"staff-list":		{"table_id":"91000091","url":"research-tools/modules/staff-list.html", 		"name_for_search":"Staff phone and room number"},
+		"staff":			{"table_id":"91000091","url":"research-tools/modules/staff.html", 			"name_for_search":"Staff"},
+		"computer":			{"table_id":"91000090","url":"research-tools/modules/computer.html", 		"name_for_search":"Computer"},
+		"nas":				{"table_id":"91000089","url":"research-tools/modules/nas.html", 			"name_for_search":"NAS"},
 		"printer":			{"table_id":"91000086","url":"research-tools/modules/printer.html", 		"name_for_search":"Printer"},
 		"unikey":			{"table_id":"91000088","url":"research-tools/modules/unikey.html", 			"name_for_search":"UniKeys"},
 		"ssl":				{"table_id":"91000085","url":"research-tools/modules/ssl.html", 			"name_for_search":"SSL"},
