@@ -1,0 +1,107 @@
+#Uni of Sydney channel config
+
+name="Eleven"
+stream = udp://239.255.101.201:5000
+
+name="One"
+stream = udp://239.255.101.202:5000
+
+name="Ten"
+stream = udp://239.255.101.203:5000
+
+name="ABC News 24"
+stream = udp://239.255.101.213:5000
+
+name="ABC One"
+stream = udp://239.255.101.214:5000
+
+name="ABC Two"
+stream = udp://239.255.101.215:5000
+
+name="SBS One"
+stream = udp://239.255.101.221:5000
+
+name="SBS Two"
+stream = udp://239.255.101.223:5000
+
+name="SBS Three"
+stream = udp://239.255.101.224:5000
+
+name="NITV"
+stream = udp://239.255.101.225:5000
+
+name="7 Digital 1"
+stream = udp://239.255.101.231:5000
+
+name="7Two"
+stream = udp://239.255.101.233:5000
+
+name="7mate"
+stream = udp://239.255.101.234:5000
+
+name="Extra"
+stream = udp://239.255.101.242:5000
+
+name="Extra Two"
+stream = udp://239.255.101.241:5000
+
+name="Nine GEM"
+stream = udp://239.255.101.243:5000
+
+name="Nine GO!"
+stream = udp://239.255.101.244:5000
+
+name="Nine"
+stream = udp://239.255.101.245:5000
+
+name="Ten"
+stream = udp://239.255.101.35:1234
+
+name="TVSN"
+stream = udp://239.255.101.41:1234
+
+name="Spree TV"
+stream = udp://239.255.101.43:1234
+
+name="Food Network"
+stream = udp://239.255.101.69:1234
+
+name="TV4ME"
+stream = udp://239.255.101.91:1234
+
+name="NineLife"
+stream = udp://239.255.101.99:1234
+
+name="CCTV 4A"
+stream = udp://239.255.101.111:1234
+
+name="CCTN"
+stream = udp://239.255.101.113:1234
+
+name="NineLife"
+stream = udp://239.255.101.99:1234
+
+name="CGTN Documentary"
+stream = udp://239.255.101.123:1234
+
+name="France 24"
+stream = udp://239.255.101.131:1234
+
+name="France 24 (en Francais)"
+stream = udp://239.255.101.133:1234
+
+name="TV5"
+stream = udp://239.255.101.184:1234
+
+name="AlJazeera"
+stream = udp://239.255.101.188:1234
+
+name="Russia Today"
+stream = udp://239.255.101.192:1234
+
+name="DW"
+stream = udp://239.255.101.193:1234
+
+name="EuroSportNews"
+stream = udp://239.255.101.196:1234
+
