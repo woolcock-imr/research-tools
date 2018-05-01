@@ -14,6 +14,8 @@
 		"knowledge-base":	{"table_id":"20000441","url":"research-tools/modules/knowledge-base.html", 	"name_for_search":"Knowledge base"},
 		"job-request":		{"table_id":"91000081","url":"research-tools/modules/job-request.html", 	"name_for_search":"Job request"},
 		"new-unikey-data":  {"table_id":"91000092","url":"research-tools/modules/new-unikey-data.html","form_module":"new-unikey-form"},
-		"new-unikey-form":  {"table_id":"91000092","url":"research-tools/modules/new-unikey-form.html"}
+		"new-unikey-form":  {"table_id":"91000092","url":"research-tools/modules/new-unikey-form.html"},
+		"unikey-extension-data":  {"table_id":"91000093","url":"research-tools/modules/unikey-extension-data.html","form_module":"unikey-extension-form"},
+		"unikey-extension-form":  {"table_id":"91000093","url":"research-tools/modules/unikey-extension-form.html"}
 	}
 }
