@@ -2,8 +2,9 @@
 	<div class="container-fluid" style='max-width:800px'>
 		<div class="text-center">
 		  <h3><a id=a1__ID>The Woolcock is a world-class network of specialised researchers and clinicians who deal with the causes, prevention, diagnosis and treatment of respiratory disease and sleep disorders</a></h3>
-	  	  <hr id=hr__ID></hr>
-          <button id=a2__ID class="btn btn-primary">Research Tools</button>
+		  <!--
+		  <hr id=hr__ID></hr>
+          <button id=a2__ID class="btn btn-primary">SFIX app survey results</button>-->
 		  <br>
 		  <br><br>
 		</div>
@@ -13,11 +14,11 @@
 	function F__ID(){
         //----------------------------------------
 		$('#a1__ID').on('click',function(){
-			$vm.nav_load_module('rt');
+			$vm.nav_load_module('pages_survey-results');
 		})
 		//----------------------------------------
 		$('#a2__ID').on('click',function(){
-			$vm.nav_load_module('rt');
+			$vm.nav_load_module('pages_survey-results');
 		})
 		//----------------------------------------
 	}
